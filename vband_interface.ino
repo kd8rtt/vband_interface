@@ -24,7 +24,7 @@ void loop() {
   int ditState = digitalRead(dit);
 
   
- //replaces left paddle input with dit using "[" as defined by VBand website
+ //replaces right paddle input with dah using "]" as defined by VBand website
   if (dahState == LOW && previousdahState == HIGH) {
       // and it's currently pressed:
     Keyboard.press(93);
@@ -35,8 +35,7 @@ void loop() {
     Keyboard.release(93);
     delay(50);
   }
- 
- //replaces right paddle input with dah using "]" as defined by VBand website
+ //replaces left paddle input with dit using "[" as defined by VBand website
   if (ditState == LOW && previousditState == HIGH) {
       // and it's currently pressed:
     Keyboard.press(91);
